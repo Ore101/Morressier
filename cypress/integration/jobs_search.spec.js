@@ -10,7 +10,7 @@ context('Jobs Search', () => {
       cy.get('h2').should('have.text', "We're Hiring!")
       cy.get('#searchLocation').type('Manchester')
       cy.get('[type="submit"]').click()
-      cy.get('.results').within(() => {
+      cy.get('.results').within(($result) => {
       cy.get('div').should('contains.text','Manchester')
       })
     })
