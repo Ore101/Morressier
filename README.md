@@ -12,5 +12,5 @@ And I should be able to select/click checkbox and item should display
 ## run test automation 
 
 1. `npm install`
-1. `npm test`
+1. `npx cypress open`
 
